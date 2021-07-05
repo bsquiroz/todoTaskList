@@ -1,0 +1,17 @@
+1. npm i sequelize express pg pg-hstore
+2. npm i nodemon -D
+3. npm i ejs
+4. sequelize init -> (iniciar el proyecto con sequelize)
+5. npm i passport passport-local
+6. npm i express-session
+7. npm i bcryptjs
+
+(crear una migracion y un modelo) 
+# users
+sequelize model:generate --name users --attributes firstname:string,lastname:string,password:string,email:string,profile_photo:string,active:boolean
+
+(hacer migracion)
+sequelize db:migrate
+
+(borrar las migraciones)
+sequelize db:migrate:undo:all
